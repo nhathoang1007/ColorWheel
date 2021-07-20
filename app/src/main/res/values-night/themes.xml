@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CodeChallenge" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background_color</item>
+        <item name="colorPrimaryVariant">@color/background_color</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="ColorWheelDefaultStyle">
+        <item name="tb_thumbRadius">@dimen/default_thumb_radius</item>
+        <item name="tb_thumbColor">@color/default_thumb_color</item>
+        <item name="tb_thumbStrokeColor">@color/default_thumb_stroke_color</item>
+        <item name="tb_thumbColorCircleScale">@dimen/default_thumb_color_circle_scale</item>
+    </style>
+
+    <style name="GradientSeekBarDefaultStyle">
+        <item name="tb_thumbRadius">@dimen/default_thumb_radius</item>
+        <item name="tb_thumbColor">@color/default_thumb_color</item>
+        <item name="tb_thumbStrokeColor">@color/default_thumb_stroke_color</item>
+        <item name="tb_thumbColorCircleScale">@dimen/default_thumb_color_circle_scale</item>
+        <item name="asb_barSize">10dp</item>
+        <item name="gsb_barCornersRadius">5dp</item>
+    </style>
+</resources>

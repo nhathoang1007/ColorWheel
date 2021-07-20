@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Code challenge</string>
+    <string name="selected_color">Selected Color</string>
+    <string name="brightness">Brightness</string>
+</resources>

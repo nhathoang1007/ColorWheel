@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.jason.colorwheel.model.ColorTemplate" />
+
+        <variable
+            name="onColorClicked"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@color/black"
+        backgroundColor="@{data.state.color}"
+        android:onClick="@{onColorClicked}"
+        app:cardElevation="2dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/bg_circle"
+            backgroundTintColor="@{data.color.color}"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
